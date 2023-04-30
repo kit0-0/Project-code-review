@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99"
+                placeholder="Age" /></label>
+        <label> Which option best describes your current role
+            <select id="dropdown">
+                <option value="">Current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+            </select>
+        </label>
+        <label> Would you recommend freeCodeCamp to a friend?</label>
+        <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
+        <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
+        <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+        <label> What is your favorite feature of freeCodeCamp?
+            <select id="dropdown2">
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+            </select>
+        </label>
+        <label>What would you like to see improved? <small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="front-end-projects" /> Front-end Projects</label>
+        <label><input type="checkbox" class="inline" value="back-end-projects" /> Back-end Projects</label>
+        <label><input type="checkbox" class="inline" value="data-visualization" /> Data visualization</label>
+        <label> Any comments or suggestions?
+            <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
